@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00bcd4;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.contact {
+    background-color: #008ba3;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.skill-bar {
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.skill-bar-fill {
+    height: 20px;
+    background: #4caf50;
+    text-align: right;
+    color: white;
+    line-height: 20px;
+    padding-right: 8px;
+    transition: width 0.6s ease;
+}
+
+.footer {
+    text-align: right;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.btn-download {
+    background-color: #00bcd4;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #0195a5;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
+
+.dark-mode .container {
+    background-color: #333;
+    color: #eee;
+}
+
+.dark-mode .contact {
+    background-color: #444;
+}
+
+.dark-mode .btn-download {
+    background-color: #4caf50;
+}
+
+@media screen and (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        padding: 10px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Ẩn phần chi tiết job */
+.chitiet {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hiển thị chi tiết job khi hover vào phần title */
+.congviec:hover .chitiet {
+    display: block;
+    opacity: 1;
+}
+
+/* Thêm hiệu ứng hover mượt mà */
+.cholam {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Thay đổi màu sắc và phóng to khi hover vào title */
+.congviec:hover .cholam {
+    color: #4CAF50;
+    transform: scale(1.05);
+}

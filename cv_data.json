@@ -1,0 +1,86 @@
+{
+    "name": "Mai Tấn Hưng",
+    "title": "Nhân viên IT",
+    "email": "maitanhung39@gmail.com",
+    "phone": "0786195339",
+    "about": [
+      "- Tôi là lập trình viên Python",
+      "- Tìm được công việc ổn định, có cơ hội thăng tiến.",
+      "- Mong muốn tìm được chỗ làm gắn bó lâu dài, học hỏi thêm nhiều kiến thức và kinh nghiệm.",
+      "- Phát triển bản thân."
+    ],
+    "skills": [
+      {"name": "Python", "level": 85},
+      {"name": "Flask", "level": 80},
+      {"name": "HTML", "level": 90},
+      {"name": "CSS", "level": 90},
+      {"name": "Tkinter", "level": 80},
+      {"name": "Help desk", "level": 95}
+    ],
+    "project": [
+      {
+        "name": "Note App",
+        "description": "Một ứng dụng ghi chú đơn giản nhưng mạnh mẽ.",
+        "link": "https://github.com/MTHung39/note_app"
+      },
+      {
+        "name": "BMI Calculator",
+        "description": "Ứng dụng tính chỉ số BMI có giao diện trực quan, lưu lịch sử, hiển thị biểu đồ.",
+        "link": "https://github.com/MTHung39/bmi-calculator"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Nhân viên hỗ trợ vận hành",
+        "company": "Bệnh viện đa khoa Tâm Anh",
+        "years": "05/2023 - 02/2025",
+        "job": [
+          "- Hỗ trợ về phần cứng, lắp đặt các thiết bị liên quan đến IT, cài đặt máy tính và các phần mềm liên quan.",
+          "- Setup họp online qua Webex, Zoom, ...",
+          "- Thi công hệ thống hạ tầng, Camera, mạng LAN.",
+          "- Kiểm tra và hỗ trợ người dùng các lỗi về mặt vận hành phần mềm nội bộ của bệnh viện."
+        ]
+      },
+      {
+        "title": "Nhân viên IT Helpdesk",
+        "company": "Công ty TNHH Nhôm An Lập Phát",
+        "years": "11/2021 - 04/2023",
+        "job": [
+          "- Hỗ trợ nhân viên và các phòng ban về kỹ thuật, hệ thống CNTT.",
+          "- Cài đặt hệ điều hành, phần mềm. Thay thế, lắp đặt thiết bị IT.",
+          "- Quản lý user Microsoft, user Domain, số đt trên CloudFone.",
+          "- Bảo trì, quản lý kho IT. Cấp phát và thu hồi thiết bị cho nhân viên.",
+          "- Đảm bảo đường truyền và quản lý user VPN truy cập tới văn phòng chính."
+        ]
+      },
+      {
+        "title": "Nhân viên kỹ thuật",
+        "company": "Công ty Digipro",
+        "years": "08/2019 - 10/2021",
+        "job": [
+          "- Kiểm tra lỗi laptop, máy PC của hãng DELL.",
+          "- Lắp đặt, thay thế các linh kiện laptop.",
+          "- Cài đặt Windows, driver, office, ứng dụng theo yêu cầu của khách hàng ..."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Cử nhân CNTT",
+        "school": "Đại học Quốc Tế Hồng Bàng",
+        "years": "2014 - 2018"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Chứng chỉ Lập trình Web (HTML, CSS, Bootstrap, JQuery)",
+        "issuer": "Đại học Khoa Học Tự Nhiên",
+        "year": "2021"
+      }
+    ],
+    "soft_skills": ["Làm việc nhóm", "Giải quyết vấn đề", "Quản lý thời gian"],
+    "contact": {
+      "email": "maitanhung39@gmail.com",
+      "phone": "0786195339"
+    }
+  }

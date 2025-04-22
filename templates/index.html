@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cv.name }} - CV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="{{ url_for('static', filename='image/MTH.jpg') }}" width="100%" height="100%">
+            <h1>{{ cv.name }}</h1>
+            <p class="info">{{ cv.title }}</p>
+        </header>
+
+        <div class="contact">
+            <h2>📞 Thông tin liên hệ</h2>
+            <p>Email: <a href="mailto:{{ cv.contact.email }}">{{ cv.contact.email }}</a></p>
+            <p>Phone: <a href="tel:{{ cv.contact.phone }}">{{ cv.contact.phone }}</a></p>
+        </div>
+
+        <div class="columns">
+            <div class="left">
+                <h2>🧑 Giới thiệu</h2>
+                {% for abo in cv.about %}
+                    <p>{{ abo }}</p>
+                {% endfor %}
+
+                <h2>🎓 Học vấn</h2>
+                {% for edu in cv.education %}
+                    <p><strong>{{ edu.degree }}</strong> tại {{ edu.school }} ({{ edu.years }})</p>
+                {% endfor %}
+
+                <h2>📜 Chứng chỉ</h2>
+                {% for cert in cv.certifications %}
+                    <p><strong>{{ cert.name }}</strong> - {{ cert.issuer }} ({{ cert.year }})</p>
+                {% endfor %}
+
+                <h2>💻 Kỹ năng</h2>
+                {% for skill in cv.skills %}
+                    <p><strong>{{ skill.name }}</strong></p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: {{ skill.level }}%;">{{ skill.level }}%</div>
+                    </div>
+                {% endfor %}
+
+                <h2>🧠 Kỹ năng mềm</h2>
+                <ul>
+                    {% for skill in cv.soft_skills %}
+                        <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="right">
+                <h2>💼 Kinh nghiệm làm việc</h2>
+                {% for exp in cv.experience %}
+                    <div class="congviec">
+                        <p class="cholam"><strong>{{ exp.title }} - {{ exp.company }}</strong> ({{ exp.years }})</p>
+                        <div class="chitiet">
+                            {% for job in exp.job %}
+                            <p>{{ job }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+
+                <h2>🚀 Dự án</h2>
+                {% for exp in cv.project %}
+                    <p><strong>{{ exp.name }}</strong>: {{ exp.description }} - <a href="{{ exp.link }}">Xem</a></p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="footer">
+            <button onclick="toggleDarkMode()">🌗 Chuyển chế độ tối</button>
+            <a href="{{ url_for('download_cv') }}" class="btn-download">📄 Tải CV PDF</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
