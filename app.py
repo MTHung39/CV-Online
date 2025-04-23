@@ -3,6 +3,7 @@ from weasyprint import HTML
 import os
 import tempfile
 import json
+import io
 
 app = Flask(__name__)
 
