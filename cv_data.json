@@ -4,17 +4,17 @@
     "email": "maitanhung39@gmail.com",
     "phone": "0786195339",
     "about": [
-      "- Tôi là lập trình viên Python",
-      "- Tìm được công việc ổn định, có cơ hội thăng tiến.",
       "- Mong muốn tìm được chỗ làm gắn bó lâu dài, học hỏi thêm nhiều kiến thức và kinh nghiệm.",
-      "- Phát triển bản thân."
+      "- Tìm được công việc ổn định, có cơ hội thăng tiến.",
+      "- Phát triển bản thân.",
+      "- Có thể tìm được công việc phù hợp với lập trình viên Python"
     ],
     "skills": [
       {"name": "Python", "level": 85},
       {"name": "Flask", "level": 80},
+      {"name": "Tkinter", "level": 80},
       {"name": "HTML", "level": 90},
       {"name": "CSS", "level": 90},
-      {"name": "Tkinter", "level": 80},
       {"name": "Help desk", "level": 95}
     ],
     "project": [
