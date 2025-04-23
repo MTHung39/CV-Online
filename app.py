@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_file, url_for
+from flask import Flask, render_template, send_file, url_for, request
 from weasyprint import HTML
 import os
 import tempfile
@@ -33,7 +33,7 @@ def projects():
 @app.route('/download_cv')
 def download_cv():
     cv_html = render_template('index.html', cv=cv_data)
-    pdf = HTML(string=cv_html, base_url=request.base_url).write_pdf()
+    pdf = HTML(string=cv_html, base_url=request.url_root).write_pdf()
     return send_file(io.BytesIO(pdf), as_attachment=True, download_name='cv.pdf', mimetype='application/pdf')
 
 if __name__ == '__main__':
