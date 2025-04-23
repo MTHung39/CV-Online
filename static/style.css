@@ -162,7 +162,7 @@ button:hover {
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease;
-    background-color: #8b8b8b;
+    background-color: #acacac;
 }
 
 /* Hiển thị chi tiết job khi hover vào phần title */
